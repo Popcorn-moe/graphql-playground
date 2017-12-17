@@ -186,7 +186,7 @@ var MiddlewareApp = /** @class */ (function (_super) {
             subscriptionEndpoint = endpoints.subscriptionEndpoint;
             headers = endpoints.headers;
         }
-        else {
+        else if (!subscriptionEndpoint) {
             subscriptionEndpoint = _this.getGraphcoolSubscriptionEndpoint(endpoint);
         }
         _this.state = {
