@@ -434,7 +434,7 @@ var Playground = /** @class */ (function (_super) {
                 method: 'post',
                 headers: headers,
                 // TODO enable
-                // credentials: 'include',
+                credentials: 'include',
                 body: JSON.stringify(graphQLParams),
             }).then(function (response) {
                 if (typeof _this.props.onSuccess === 'function') {

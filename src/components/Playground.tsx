@@ -991,7 +991,7 @@ export class Playground extends React.PureComponent<Props & DocsState, State> {
       method: 'post',
       headers,
       // TODO enable
-      // credentials: 'include',
+      credentials: 'include',
       body: JSON.stringify(graphQLParams),
     }).then(response => {
       if (typeof this.props.onSuccess === 'function') {
